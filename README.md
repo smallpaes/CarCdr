@@ -28,7 +28,7 @@ associated functions such as copying a list or counting the number of elements i
 
 This project is used by the following projects:
 
-- [NUCLEI](https://github.com/)
+- [NUCLEI](https://github.com/smallpaes/nuclei)
 
 
 ## Installation
