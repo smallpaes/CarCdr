@@ -1,17 +1,6 @@
 #pragma once
 
-// struct cons
-// {
-//   struct cons *car;
-//   struct cons *cdr;
-//   atomtype leaf;
-// };
-
-// struct lisp
-// {
-//   struct cons *p;
-//   int size;
-// };
+#define LISPIMPL "Linked"
 
 struct lisp
 {

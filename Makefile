@@ -1,10 +1,9 @@
-CC=gcc
+CC=clang
 COMMON= -Wall -Wextra -Wfloat-equal -Wpedantic -Wvla -std=c99 -Werror
 DEBUG= -g3
 SANITIZE= $(COMMON) -fsanitize=undefined -fsanitize=address $(DEBUG)
 VALGRIND= $(COMMON) $(DEBUG)
-# You'll probably need to change this path to somewhere we've you've stored general.c/.h
-GENERAL= ../../../../ADTs/General
+GENERAL= ./General
 PRODUCTION= $(COMMON) -O3
 LDLIBS =
 
@@ -24,4 +23,8 @@ clean:
 
 run: all
 	./testlinked_s
-	valgrind --quiet ./testlinked_v
+	valgrind ./testlinked_v
+
+run_no_val: all
+	./testlinked_s
+	

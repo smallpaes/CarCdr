@@ -1,5 +1,3 @@
-
-
 #pragma once
 
 #include "general.h"
@@ -48,8 +46,6 @@ void lisp_tostring(const lisp *l, char *str);
 // Clears up all space used
 // Double pointer allows function to set 'l' to NULL on success
 void lisp_free(lisp **l);
-
-/* ------------- Tougher Ones : Extensions ---------------*/
 
 // Builds a new list based on the string 'str'
 lisp *lisp_fromstring(const char *str);
